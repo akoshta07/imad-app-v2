@@ -24,9 +24,7 @@ button.onclick = function(){
     request.open('GET','http://akoshta07.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-//Submit name   
-var nameInput = document.getElementById('name');
-var name = nameInput.value;
+//Submit name       
 var submit =document.getElementById('submit_btn');
 submit.onclick = function(){
      
@@ -53,6 +51,8 @@ submit.onclick = function(){
         //Not done yet
     };
    //Make the request
+   var nameInput = document.getElementById('name');
+   var name = nameInput.value;
     request.open('GET','http://akoshta07.imad.hasura-app.io/sumbit-name?name=' + name,true);
     request.send(null);
     
