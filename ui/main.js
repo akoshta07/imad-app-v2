@@ -53,7 +53,7 @@ submit.onclick = function(){
    //Make the request
    var nameInput = document.getElementById('name');
    var name = nameInput.value;
-    request.open('GET','http://akoshta07.imad.hasura-app.io/sumbit-name?name=' + name,true);
+    request.open('GET','http://akoshta07.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
     
 };
