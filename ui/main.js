@@ -10,7 +10,6 @@ submit.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //take some action
             if(request.status === 200){
-                //Capture a list of name and render it as a list
               console.log('user logged in');
               alert('logged in successfully');
             }
